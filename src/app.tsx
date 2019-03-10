@@ -10,10 +10,12 @@ import * as React from "react"
 import * as ReactDOM from "react-dom"
 import {BrowserRouter, Route} from "react-router-dom"
 
-import {Menu} from "./components/menu"
+import {Menu} from "./components/menu/menu"
 
 import {Home} from "./pages/home"
 import {Test1} from "./pages/test1"
+
+import './style.scss'
 
 export class TheApp extends React.Component<{}, {}> {
   render() {

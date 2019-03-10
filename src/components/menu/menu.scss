@@ -1,0 +1,24 @@
+@import '../../style';
+
+.menubox {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: $secondary-color;
+}
+
+.menuitem {
+    display: inline-block;
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+
+    background-color: $background-color;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+}

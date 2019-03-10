@@ -1,0 +1,15 @@
+/*
+ *  Global style definitions file
+ */
+
+$font-stack:    Helvetica, sans-serif;
+
+$background-color: white;
+$base-color: #4455ff;
+$primary-color: darken($base-color, 10%);
+$secondary-color: lighten($base-color, 10%);
+
+body {
+    margin: 0px;
+    font-family: $font-stack;
+}

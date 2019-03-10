@@ -3,7 +3,6 @@ import * as ReactDOM from "react-dom"
 
 import {Title} from "./components/title"
 import {Timeprovider} from "./components/timeprovider"
-import { string } from "prop-types";
 
 interface TheAppState {
   time? : string;

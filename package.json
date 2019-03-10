@@ -1,25 +1,24 @@
 {
   "name": "react-webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demonstration program of react+typescript",
   "main": "server.js",
   "dependencies": {
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "@types/react": "^16.8.2",
-    "@types/react-dom": "^16.8.2"
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch"
   },
-  "author": "",
+  "author": "Andre Beckedorf",
   "license": "ISC"
 }

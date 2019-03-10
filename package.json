@@ -5,7 +5,10 @@
   "main": "server.js",
   "dependencies": {
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "fastify": "^2.0.1",
+    "fastify-static": "^2.3.4"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
@@ -13,11 +16,13 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "@types/react": "^16.8.2",
-    "@types/react-dom": "^16.8.2"
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^4.3.1"
   },
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "server": "node ./src/server.js"
   },
   "author": "Andre Beckedorf",
   "license": "ISC"

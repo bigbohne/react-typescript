@@ -1,3 +1,6 @@
+/**
+ * Class that provides a from a source through a callback
+ */
 import * as React from "react"
 import { string } from "prop-types";
 

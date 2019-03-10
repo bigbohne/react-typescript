@@ -1,33 +1,32 @@
+/**
+ * Entrypoint of the React application
+ * 
+ * Contains:
+ * - Topmenu
+ * - Routes for the subsites
+ * - ReactDOM.render(...) call to initialize the application
+ */
 import * as React from "react"
 import * as ReactDOM from "react-dom"
+import {BrowserRouter, Route} from "react-router-dom"
 
-import {Title} from "./components/title"
-import {Timeprovider} from "./components/timeprovider"
+import {Menu} from "./components/menu"
 
-interface TheAppState {
-  time? : string;
-}
+import {Home} from "./pages/home"
+import {Test1} from "./pages/test1"
 
-export class TheApp extends React.Component<{}, TheAppState> {
-  
-  constructor(props : any) {
-    super(props);
-
-    this.state = {};
-  }
-
-  updateTime(newTime : string) {
-    this.setState({
-      time: newTime
-    });    
-  }
-
+export class TheApp extends React.Component<{}, {}> {
   render() {
     return (
-      <Timeprovider callback={this.updateTime.bind(this)}>
-        <Title message="Bonjour!" time={this.state.time} />
-        <Title message="Hello!" time={this.state.time} />
-      </Timeprovider>
+      <div>
+        <BrowserRouter>
+          <div>
+            <Menu />
+            <Route path="/" exact component={Home} />
+            <Route path="/test1/" component={Test1} />
+          </div>
+        </BrowserRouter>
+      </div>
       )
   }
 }
